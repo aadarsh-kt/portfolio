@@ -12,12 +12,12 @@ import { Player, Controls } from "@lottiefiles/react-lottie-player";
 
 const Skills = () => {
   return (
-    <div className="flex flex-col grow">
-      <p className="text-5xl text-gray-800 font-[poppins] font-semibold">
+    <div className="flex flex-col">
+      <p className="lg:text-5xl text-3xl xl:text-6xl text-gray-800 font-[poppins] font-semibold">
         Skills
       </p>
-      <div className="flex items-center">
-        <div className="flex w-1/2">
+      <div className="flex lg:flex-row flex-col items-center">
+        <div className="flex lg:w-2/3 w-full xl:w-full">
           <Player
             autoplay
             loop
@@ -30,33 +30,33 @@ const Skills = () => {
             />
           </Player>
         </div>
-        <div className="flex justify-center w-1/2">
-          <div className="grid grid-cols-3 gap-20">
-            <div className="bg-gray-100 rounded-full p-4">
+        <div className="flex justify-center w-full lg:w-1/2 xl:w-full">
+          <div className="grid grid-cols-3 gap-10 lg:gap-20">
+            <div className="bg-gray-100 rounded-full p-5 lg:p-4">
               <HTML5 />
             </div>
-            <div className="bg-gray-100 rounded-full p-4">
+            <div className="bg-gray-100 rounded-full p-5 lg:p-4">
               <CSS3 />
             </div>
-            <div className="bg-gray-100 rounded-full p-4">
+            <div className="bg-gray-100 rounded-full p-5 lg:p-4">
               <Javascript />
             </div>
-            <div className="bg-gray-100 rounded-full p-4">
+            <div className="bg-gray-100 rounded-full p-5 lg:p-4">
               <ReactJS />
             </div>
-            <div className="bg-gray-100 rounded-full p-4">
+            <div className="bg-gray-100 rounded-full p-5 lg:p-4">
               <NodeJS />
             </div>
-            <div className="bg-gray-100 rounded-full p-4">
+            <div className="bg-gray-100 rounded-full p-5 lg:p-4">
               <Express />
             </div>
-            <div className="bg-gray-100 rounded-full p-4">
+            <div className="bg-gray-100 rounded-full p-5 lg:p-4">
               <MongoDB />
             </div>
-            <div className="bg-gray-100 rounded-full p-4">
+            <div className="bg-gray-100 rounded-full p-5 lg:p-4">
               <TailwindCSS />
             </div>
-            <div className="bg-gray-100 rounded-full p-4">
+            <div className="bg-gray-100 rounded-full p-5 lg:p-4">
               <CPlusPlus />
             </div>
           </div>

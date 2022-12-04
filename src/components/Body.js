@@ -2,26 +2,30 @@ import ProfileImg from "../assets/Aadarsh-profile-image.png";
 
 function Body() {
   return (
-    <div className="flex flex-row h-screen bg-white">
-      <div className="flex flex-col w-full h-full justify-center items-start">
-        <p className="text-4xl text-gray-800 font-[poppins] font-medium">
-          Hello, I am
-        </p>
-        <p className="text-5xl text-gray-800 font-[poppins] font-semibold">
-          Aadarsh Kumar Tiwari
-        </p>
+    <div className="flex flex-col-reverse lg:flex-row bg-white lg:justify-start justify-center items-center lg:pt-20 pt-10">
+      <div className="flex flex-col justify-center lg:items-start items-center">
+        <p className="text-2xl lg:text-4xl xl:text-5xl text-center lg:text-left text-gray-800 font-[poppins] font-light">Hello, I am</p>
+        <p className="text-3xl lg:text-5xl  xl:text-6xl text-center lg:text-left text-gray-800 font-[poppins] font-semibold">Aadarsh Kumar Tiwari</p>
         <br />
-        <p className="text-4xl font-bold text-gray-800 font-[poppins] font-extralight italic">
+        <p className="text-2xl lg:text-4xl xl:text-5xl text-center lg:text-left font-bold text-gray-800 font-[poppins] font-extralight italic">
           Student at IIT(ISM) Dhanbad
         </p>
         <br />
-        <button className="text-gray-800 font-[poppins] mt-2 border-2 rounded-md p-2 hover:bg-gray-800 hover:text-white">
-          Download CV
-        </button>
+        <a
+          href="https://drive.google.com/file/d/1JJZVi_yvkpmbPVeYkixphiy3SkEKkGYh/view?usp=share_link"
+          download="pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="text-gray-800 lg:text-lg xl:text-xl text-sm font-[poppins] mt-2 border-2 rounded-md p-2 hover:bg-gray-800 hover:text-white">
+            Download CV
+          </button>
+        </a>
       </div>
-      <div className="flex w-full h-full justify-center pt-20 items-start">
-        <img className="flex w-1/2" src={ProfileImg} alt="Profile image" />
+      <div className="flex w-1/2 h-1/2 lg:justify-end justify-center items-center p-5">
+        <img className="flex w-full md:w-3/4 lg:w-1/2" src={ProfileImg} alt="aadarshkt"/>
       </div>
+      
     </div>
   );
 }

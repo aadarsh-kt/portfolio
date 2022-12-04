@@ -4,8 +4,14 @@ module.exports = {
     "./public/index.html"
   ],
   theme: {
+    screens : {
+      'sm':'320px',
+      'md':'768px',
+      'lg':'1024px',
+      'xl':'1440px'
+    },
     extend: {
-      
+     
     },
   },
   plugins: [],
