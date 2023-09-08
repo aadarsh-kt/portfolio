@@ -16,7 +16,7 @@ function Body() {
         </p>
         <br />
         <a
-          href="https://drive.google.com/file/d/14DFKrUjvRjp0AKvRZD_pSyUEvvdzpBHt/view?usp=sharing"
+          href="https://docs.google.com/document/d/1jTZYblJRap0K61-xxJNT54FzLUnuuP0p8L-dctnns-k/edit?usp=sharing"
           download="pdf"
           target="_blank"
           rel="noopener noreferrer">
