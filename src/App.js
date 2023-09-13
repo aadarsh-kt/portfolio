@@ -8,7 +8,7 @@ import Skills from "./components/Skills";
 function App() {
   return (
     <div className="flex flex-col">
-      <div className="flex flex-col p-10">
+      <div className="h-screen flex flex-col p-10">
         <Header />
         <Body />
       </div>
@@ -22,7 +22,7 @@ function App() {
         <CodingCompetitions />
       </div>
       <div className="flex p-10 w-full bg-gray-800">
-       <Contact />
+        <Contact />
       </div>
     </div>
   );

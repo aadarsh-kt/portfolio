@@ -1,4 +1,4 @@
-import ProfileImg from "../assets/Aadarsh-profile-image.png";
+import ProfileImg from "../assets/Profile_photo.png";
 
 function Body() {
   return (
@@ -25,12 +25,17 @@ function Body() {
           </button>
         </a>
       </div>
-      <div className="flex w-1/2 h-1/2 lg:justify-end justify-center items-center p-5">
-        <img
-          className="flex w-full md:w-3/4 lg:w-1/2"
-          src={ProfileImg}
-          alt="aadarshkt"
-        />
+      <div
+        className="flex rounded-full w-1/2 h-1/2 lg:justify-end justify-center 
+      items-center p-5">
+        <div
+          className="flex rounded-full w-full md:w-3/4 bg-blue-100
+        lg:w-1/2 p-2">
+          <img
+            src={ProfileImg}
+            alt="aadarshkt"
+          />
+        </div>
       </div>
     </div>
   );

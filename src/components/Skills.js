@@ -8,7 +8,10 @@ import MongoDB from "../assets/MongoDB";
 import TailwindCSS from "../assets/TailwindCSS";
 import ReactJS from "../assets/ReactJS";
 import NodeJS from "../assets/NodeJS";
-import { Player, Controls } from "@lottiefiles/react-lottie-player";
+import {
+  Player,
+  Controls,
+} from "@lottiefiles/react-lottie-player";
 
 const Skills = () => {
   return (
@@ -22,17 +25,24 @@ const Skills = () => {
             autoplay
             loop
             src="https://assets8.lottiefiles.com/packages/lf20_aibotaxg.json"
-            style={{ height: "100%", width: "100%" }}
-          >
+            style={{
+              height: "100%",
+              width: "100%",
+            }}>
             <Controls
               visible={false}
-              buttons={["play", "repeat", "frame", "debug"]}
+              buttons={[
+                "play",
+                "repeat",
+                "frame",
+                "debug",
+              ]}
             />
           </Player>
         </div>
         <div className="flex justify-center w-full lg:w-1/2 xl:w-full">
           <div className="grid grid-cols-3 gap-10 lg:gap-20">
-            <div className="bg-gray-100 rounded-full p-5 lg:p-4">
+            <div className="bg-gray-100 rounded-full flex justify-center items-center">
               <HTML5 />
             </div>
             <div className="bg-gray-100 rounded-full p-5 lg:p-4">
