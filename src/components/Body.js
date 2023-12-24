@@ -1,6 +1,12 @@
+import { useState } from "react";
 import ProfileImg from "../assets/Profile_photo.png";
 
 function Body() {
+  const [loading, setLoading] = useState(true);
+
+  const handle_image_on_load = () => {
+    setLoading(false);
+  };
   return (
     <div className="flex flex-col-reverse lg:flex-row bg-white lg:justify-start justify-center items-center lg:pt-20 pt-10">
       <div className="flex flex-col justify-center lg:items-start items-center">
@@ -29,12 +35,10 @@ function Body() {
         className="flex rounded-full w-1/2 h-1/2 lg:justify-end justify-center 
       items-center p-5">
         <div
-          className="flex rounded-full w-full md:w-3/4 bg-blue-100
+          className="flex rounded-full w-full md:w-3/4 bg-blue-100 items-center justify-center
         lg:w-1/2 p-2">
-          <img
-            src={ProfileImg}
-            alt="aadarshkt"
-          />
+          {loading && <p>Loading...</p>}
+          <img onLoad={handle_image_on_load} src={ProfileImg} alt="aadarshkt" />
         </div>
       </div>
     </div>
