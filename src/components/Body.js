@@ -8,8 +8,8 @@ function Body() {
     setLoading(false);
   };
   return (
-    <div className="flex flex-col-reverse lg:flex-row bg-white lg:justify-start justify-center items-center lg:pt-20 pt-10">
-      <div className="flex flex-col justify-center lg:items-start items-center">
+    <div className="flex flex-col-reverse lg:flex-row bg-white lg:justify-start justify-center items-center lg:pt-20 pt-10 z-20 bg-transparent">
+      <div className="flex flex-col justify-center lg:items-start items-center bg-transparent">
         <p className="text-2xl lg:text-4xl xl:text-5xl text-center lg:text-left text-gray-800 font-[poppins] font-light">
           Hello, I am
         </p>
