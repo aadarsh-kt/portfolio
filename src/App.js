@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import About from "./components/About";
 import Body from "./components/Body";
 import CodingCompetitions from "./components/CodingCompetitions";
