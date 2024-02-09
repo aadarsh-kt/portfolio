@@ -1,14 +1,21 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import ProfileImg from "../assets/Profile_photo.png";
 
 function Body() {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
+  const ref = useRef();
 
   const handle_image_on_load = () => {
-    setLoading(false);
+    setLoading(true);
   };
+
+  useEffect(() => {
+    if (ref.current && ref.current.complete) {
+      handle_image_on_load();
+    }
+  });
   return (
-    <div className="flex flex-col-reverse lg:flex-row bg-white lg:justify-start justify-center items-center lg:pt-20 pt-10 z-20 bg-transparent">
+    <div className="flex flex-col-reverse lg:flex-row lg:justify-start justify-center items-center lg:pt-20 pt-10 z-20 bg-transparent">
       <div className="flex flex-col justify-center lg:items-start items-center bg-transparent">
         <p className="text-2xl lg:text-4xl xl:text-5xl text-center lg:text-left text-gray-800 font-[poppins] font-light">
           Hello, I am
@@ -38,7 +45,7 @@ function Body() {
           className="flex rounded-full w-full md:w-3/4 bg-blue-100 items-center justify-center
         lg:w-1/2 p-2">
           {loading && <p>Loading...</p>}
-          <img onLoad={handle_image_on_load} src={ProfileImg} alt="aadarshkt" />
+          <img ref={ref} src={ProfileImg} alt="aadarshkt" />
         </div>
       </div>
     </div>
